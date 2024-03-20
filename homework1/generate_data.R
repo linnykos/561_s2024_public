@@ -1,6 +1,6 @@
 generate_data <- function(n){
   set.seed(10)
-  stopifnot(is.integer(n), n > 0, n %% 1 == 0)
+  stopifnot(n > 0, n %% 1 == 0)
 
   idx_vec <- sample(1:3, n, replace = T)
   sample_vec <- rep(NA, n)
