@@ -32,7 +32,7 @@ These instructions are essential, so please read them all carefully.
 - Please answer the question prompt and show your code (inline). That is,
 all your code should be visible in the knitted chunks.
 
-- To complete this homework, you may write in the `homework1.Rmd` file. 
+- To complete this homework, you may write in the `HW1.Rmd` file. 
 (It is recommended to complete this homework in R Studio, where clicking the
 `Knit` button would knit your homework.)
 
@@ -74,7 +74,7 @@ you should have:
 1. Created a GitHub account,
 2. Created a private GitHub repository called `UWBiost561`,
 3. Created an R package, which is located in your GitHub repository `UWBiost561`,
-4. Created a vignette, which includes both `homework1.Rmd` and `homework1.html`
+4. Created a vignette, which includes both `HW1.Rmd` and `HW1.html`
 under the `vignettes` folder, in your GitHub repository `UWBiost561`,
 5. Added the username `linnykos` as a Collaborator to your GitHub repository `UWBiost561`.
 
@@ -228,11 +228,11 @@ Now that you have completed this homework, all that's remaining is to
 push this homework onto your `UWBiost561` GitHub repository.
 To do this, please ensure:
 
-1. Your file is named `homework1.Rmd`. (This current homework file you are
-writing in will replace the initial `homework1.Rmd` you made when
+1. Your file is named `HW1.Rmd`. (This current homework file you are
+writing in will replace the initial `HW1.Rmd` you made when
 you completed the walkthrough in Question 1.)
 2. Your file is in the `vignettes` folder in your `UWBiost561` R package.
-3. You push your two files, `homework1.Rmd` and `homework1.html` (the latter is the knitted HTML file) onto your GitHub repository.
+3. You push your two files, `HW1.Rmd` and `HW1.html` (the latter is the knitted HTML file) onto your GitHub repository.
 4. Double-check that you can see both files online on github.com when you look at your repository.
 
 Again, ensure the username `linnykos` is added to your private GitHub repository. And with that, you're done! (For future homeworks, you will be "submitting" your homeworks like this.)
