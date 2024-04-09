@@ -10,7 +10,7 @@ generate_random_graph <- function(n,
   adj_mat <- matrix(sample(x = c(0,1),
                            size = n^2,
                            prob = c(1-density_low, density_low),
-                           replace = T), 
+                           replace = TRUE), 
                     nrow = n, ncol = n)
   
   # symmetrize the matrix
