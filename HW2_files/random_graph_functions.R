@@ -35,3 +35,23 @@ generate_random_graph <- function(n,
   list(adj_mat = adj_mat,
        rev_order = rev_order)
 }
+
+
+pivot_longer_heatmap <- function(adj_mat){
+  # Convert the matrix to a tibble (a type of data frame) for easier manipulation
+  colnames(adj_mat) <- paste0("node:", 1:nrow(adj_mat))
+  mat_df <- as_tibble(adj_mat)
+  
+  # Add row numbers as a new column, since pivot_longer() will melt all existing columns
+  mat_df <- mat_df %>% mutate(Row = row_number())
+  
+  # Use pivot_longer() to convert from wide to long format
+  mat_long <- mat_df %>%
+    pivot_longer(cols = !Row, 
+                 names_to = "Column", 
+                 values_to = "Value") %>%
+    mutate(Column = as.numeric(gsub("node:", "", Column))) %>%
+    rename(X = Row, Y = Column)
+  
+  mat_long
+}
